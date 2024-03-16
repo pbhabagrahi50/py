@@ -9,7 +9,7 @@ def mul(num1,num2):
     return c
 
 
-x=add("hekko",str(5,45)
+x=add(5,45)
 y=sub(45,5)
 z=mul(544,333)
 print("addition :",x)
