@@ -16,3 +16,13 @@ print("addition :",x)
 print(y)
 print(z)
 
+from dotenv import load_dotenv
+import os
+
+# Load variables from .env file
+load_dotenv()
+
+# Access the variable
+db_password = os.getenv('DB_PASSWORD')
+print(db_password)
+
