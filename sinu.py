@@ -24,12 +24,40 @@
 # system.remove('db-server-01')
 # print(servers)
 # print(system)
-def sys():
-   servers = ['web-server-01', 'db-server-01', 'app-server-01']
-   return servers
-pax=sys()
-jex=input("server_name : ")
-pax.append(jex)
-print(pax)
-print(jex)
-print(sys())
+# import re
+# def sys():
+#    servers = ['server','web-server-01', 'db-server-01', 'app-server-01']
+#    return servers
+# pax=sys()
+# jex=input("server_name : ")
+# pax.append(jex)
+# for rex in pax:
+#    print(rex)
+
+
+# fruits = ["apple", "banana", "cherry"]
+# for fruit in fruits:
+#     print(fruit)
+# dex=['hacker','devloper','ui/ux designer']
+# rex=dex
+# print(rex)
+
+
+
+# count = 0
+# while count < 100:
+#     print(count)
+#     count += 1
+
+
+log_file = [
+   "INFO: Operation successful",
+   "ERROR: File not found",
+   "DEBUG: Connection established",
+   "ERROR: Database connection failed",
+]
+dex=input("keyword : ")
+rex=(dex.upper())
+for line in log_file:
+    if rex in line:
+        print(line)
