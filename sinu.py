@@ -50,14 +50,36 @@
 #     count += 1
 
 
-log_file = [
-   "INFO: Operation successful",
-   "ERROR: File not found",
-   "DEBUG: Connection established",
-   "ERROR: Database connection failed",
-]
-dex=input("keyword : ")
-rex=(dex.upper())
-for line in log_file:
-    if rex in line:
-        print(line)
+# log_file = [
+#    "INFO: Operation successful",
+#    "ERROR: File not found",
+#    "DEBUG: Connection established",
+#    "ERROR: Database connection failed",
+# ]
+# dex=input("keyword : ")
+# rex=(dex.upper())
+# for line in log_file:
+#     if rex in line:
+#         print(line)
+
+
+import os
+def main():
+    folder_paths =input("Enter Folder Path : ").split()
+    return folder_paths
+for folders in main():
+    try:
+        files=os.listdir(folders)
+    except FileNotFoundError:
+        print("pls provide a valid folder name"+ folders)
+        continue
+    except PermissionError:
+        print("No access to the folder"+folders)
+    print("===== listing files for the Folder === " + folders)
+
+
+for file in files:
+    print(file)
+     
+
+

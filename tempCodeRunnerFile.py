@@ -1,3 +1,2 @@
-
-# servers.remove('db-server-01')
-# print(system)
+if __name__ == "__main__":
+#     main()
