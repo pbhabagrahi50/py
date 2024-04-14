@@ -1,10 +1,7 @@
-def main():
-    folder_paths = input("Enter a list of folder paths separated by spaces: ").split()
-    print(folder_paths)
-
-    # Print elements in the list
-    #for folder_path in folder_paths:
-    #    print(folder_path)
-
-if __name__ == "__main__":
-   main()
+bhaba = {
+"name":"papu",
+"age": "28",
+"course": "devops"
+}
+hd=input("Input : ")
+print("I will be a devops enginneer : "+bhaba[hd])

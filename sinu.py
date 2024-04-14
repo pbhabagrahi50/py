@@ -68,18 +68,15 @@ def main():
     folder_paths =input("Enter Folder Path : ").split()
     return folder_paths
 for folders in main():
-    try:
+    # try:
         files=os.listdir(folders)
-    except FileNotFoundError:
-        print("pls provide a valid folder name"+ folders)
-        continue
-    except PermissionError:
-        print("No access to the folder"+folders)
-    print("===== listing files for the Folder === " + folders)
+    # except FileNotFoundError:
+    #     print("pls provide a valid folder name"+ folders)
+    #     continue
+    # except PermissionError:
+    #     print("No access to the folder"+folders)
+        print("===== listing files for the Folder === " + folders)
 
 
 for file in files:
     print(file)
-     
-
-
